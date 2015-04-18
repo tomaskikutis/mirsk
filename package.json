@@ -2,6 +2,8 @@
   "name": "r4",
   "version": "0.0.0",
   "devDependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.3",
     "react": "^0.13.1",
     "react-router": "^0.13.2",
     "reactify": "^1.1.0"
