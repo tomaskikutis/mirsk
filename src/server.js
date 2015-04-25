@@ -7,18 +7,20 @@ app.set('views', './');
 
 app.use('/assets', express.static('./assets'));
 
-// var React = require('react');
-// var Router = require('react-router');
-// var routes = require('../app/routes');
+var favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/assets/favicon.ico'));
+
+var React = require('react');
+var Router = require('react-router');
+var routes = require('../dist/app/routes');
 
 // if using express it might look like this
 app.use(function (req, res) {
 	// pass in `req.url` and the router will immediately match
-	// Router.run(routes, req.url, function (Handler) {
-	// 	var content = React.renderToString(<Handler/>);
-	// 	res.render('main', {content: content});
-	// });
-    res.render('index', {content: ""});
+	Router.run(routes, req.url, function (Handler) {
+		var content = React.renderToString(React.createElement(Handler, null));
+		res.render('index', {content: content});
+	});
 });
 
 app.listen(3001, function () {
