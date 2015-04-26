@@ -5,10 +5,7 @@ app.set('view engine', 'ejs');
 
 app.set('views', './');
 
-app.use('/assets', express.static('./assets'));
-
-var favicon = require('serve-favicon');
-app.use(favicon(__dirname + '/assets/favicon.ico'));
+app.use('/', express.static('../static'));
 
 var React = require('react');
 var Router = require('react-router');

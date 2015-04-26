@@ -10,7 +10,7 @@
     "serve-favicon": "^2.2.0"
   },
   "scripts": {
-    "jsx": "jsx --watch src/app/ dist/app/",
-    "watchjs": "watchify dist/app/routes.js -o src/assets/app.js"
+    "jsx": "jsx src/app/ dist/app/",
+    "buildjs": "browserify -t reactify src/client.js -o static/app.js"
   }
 }
