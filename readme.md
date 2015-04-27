@@ -1,3 +1,11 @@
+# Why another starter kit ?
+
+* **ES5** - performace, debuggability, stability
+* minimal dependencies: **react**, **react-router**, **express**
+* no heavy build tools, using `npm run` instead
+
+## Install
+
 ```
 git clone https://github.com/tomaskikutis/mirsk.git
 cd mirsk
@@ -8,4 +16,4 @@ npm run buildjs
 cd build
 node server.js
 ```
-http://localhost:3001
+open [http://localhost:3001](http://localhost:3001)
