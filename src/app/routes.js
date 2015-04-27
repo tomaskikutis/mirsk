@@ -2,10 +2,10 @@ var React = require('react');
 var Route = require('react-router').Route;
 
 var ApplicationRoute = require('./routes/application-route');
-var ProductsRoute = require('./routes/products-route');
+var TestRoute = require('./routes/test-route');
 
 module.exports = (
 	<Route handler={ApplicationRoute}>
-		<Route name='products' handler={ProductsRoute}/>
+		<Route name='testroute' handler={TestRoute}/>
 	</Route>
 );
