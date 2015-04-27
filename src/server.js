@@ -9,7 +9,7 @@ app.use('/', express.static('../static'));
 
 var React = require('react');
 var Router = require('react-router');
-var routes = require('../dist/app/routes');
+var routes = require('../build/app/routes');
 
 // if using express it might look like this
 app.use(function (req, res) {

@@ -1,6 +1,6 @@
 var React = require('react');
 var Router = require('react-router');
-var routes = require('../dist/app/routes');
+var routes = require('../build/app/routes');
 
 Router.run(routes, Router.HistoryLocation, function (Handler) {
 	React.render(<Handler/>, document.getElementById('app'));

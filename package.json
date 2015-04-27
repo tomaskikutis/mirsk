@@ -9,7 +9,7 @@
     "reactify": "^1.1.0"
   },
   "scripts": {
-    "jsx": "jsx src/app/ dist/app/",
+    "jsx": "jsx src/app/ build/app/",
     "buildjs": "browserify -t reactify src/client.js -o static/app.js"
   }
 }
